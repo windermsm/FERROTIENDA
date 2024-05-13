@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="https://dte.guatefacturas.com/webservices63/feltestSB/Guatefac?wsdl" uri="xml-resources/web-service-references/Guatefac/wsdl/dte.guatefacturas.com/webservices63/feltestSB/Guatefac.wsdl"/>
+    <system systemId="https://pdte.guatefacturas.com:443/webservices63/feltestSB/Guatefac" uri="xml-resources/web-service-references/Guatefac/wsdl/pdte.guatefacturas.com_443/webservices63/feltestsb/guatefac"/>
+    <system systemId="file:/C:/Users/Derwin%20Santa%20Cruz/Desktop/guatefacturas.wsdl" uri="xml-resources/web-service-references/guatefacturas/wsdl/guatefacturas.wsdl"/>
+</catalog>
