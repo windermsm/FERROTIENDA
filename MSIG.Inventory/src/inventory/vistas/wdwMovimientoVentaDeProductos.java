@@ -1218,7 +1218,7 @@ public class wdwMovimientoVentaDeProductos extends javax.swing.JInternalFrame {
     }
     
     private void totalIva(){
-        Double total_iva = Math.rint(total_factura * 12)/100;
+        double total_iva = total_factura - (total_factura / 1.12);
         txtIva.setText(String.valueOf(matematica.redondear(total_iva)));
     }
     

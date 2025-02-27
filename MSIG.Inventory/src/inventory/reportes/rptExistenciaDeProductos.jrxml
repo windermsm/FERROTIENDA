@@ -24,7 +24,7 @@
         exi_producto as cantidad,
         precio_compra_producto as precio_compra,
         precio_est_producto as precio_venta,
-        format(exi_producto * precio_compra_producto,2) as costo_compra,
+        format(exi_producto * (precio_compra_producto / 1.12), 2) as costo_compra,
         format(exi_producto * precio_est_producto,2) as costo_venta
 from    m_producto
 where   id_proveedor = ifnull($P{P_ID_PROVEEDOR}, id_proveedor)
@@ -41,13 +41,23 @@ select  '' as codigo,
 from    m_producto
 where   id_proveedor = ifnull($P{P_ID_PROVEEDOR}, id_proveedor)]]>
 	</queryString>
-	<field name="codigo" class="java.lang.String"/>
-	<field name="marca" class="java.lang.String"/>
-	<field name="descripcion" class="java.lang.String"/>
+	<field name="codigo" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="marca" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="descripcion" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
 	<field name="unidad" class="java.lang.String"/>
-	<field name="cantidad" class="java.math.BigDecimal"/>
+	<field name="cantidad" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[Cantidad de producto en existencia al final del dia]]></fieldDescription>
+	</field>
 	<field name="precio_compra" class="java.lang.String"/>
-	<field name="precio_venta" class="java.lang.String"/>
+	<field name="precio_venta" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
 	<field name="costo_compra" class="java.lang.String"/>
 	<field name="costo_venta" class="java.lang.String"/>
 	<background>
